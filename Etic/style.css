@@ -5,10 +5,24 @@ body{
 .sobre{
     background-color: #003562;
 }
-.sobre-body h1 p {
-    color: #ffffff;
+
+.bg-azul-personalizado {
+    background-color: #003562 !important;
 }
 
+.text-laranja-personalizado {
+    color: #ff6600 !important; 
+}
+
+.text-laranja-personalizado:hover {
+    color: #ff8533 !important; 
+}
+.text-branco-personalizado{
+    color: white !important; ;
+}
+.text-preto-personalizado{
+    color: black !important; ;
+}
 .btn-modern {
 
 
