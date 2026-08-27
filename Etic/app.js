@@ -1,6 +1,6 @@
 const inputNome = document.getElementById('nome');
 const inputEmail = document.getElementById('email');
-const selectCategoria = document.getElementById('categoria');
+const selectCategoria = document.getElementById('categoria'); // não existe no HTML atual — código protegido abaixo
 
 const previewNome = document.getElementById('previewNome');
 const previewEmail = document.getElementById('previewEmail');
@@ -30,16 +30,16 @@ inputEmail.addEventListener('input', () => {
     }
 });
 
+if (selectCategoria) {
+    selectCategoria.addEventListener('change', () => {
+        const categoria = selectCategoria.value;
 
-// Atualiza a categoria em tempo real
-selectCategoria.addEventListener('change', () => {
-    const categoria = selectCategoria.value;
-
-    if (categoria === "") {
-        previewCategoria.textContent = "Não definida";
-        previewCategoria.className = "badge bg-secondary";
-    } else {
-        previewCategoria.textContent = categoria;
-        previewCategoria.className = "badge bg-primary";
-    }
-});
+        if (categoria === "") {
+            previewCategoria.textContent = "Não definida";
+            previewCategoria.className = "badge bg-secondary";
+        } else {
+            previewCategoria.textContent = categoria;
+            previewCategoria.className = "badge bg-primary";
+        }
+    });
+}

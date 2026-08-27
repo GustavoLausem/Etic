@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etic</title>
+    <title>TEC&EDUCA | Educação Financeira</title>
+
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -17,21 +18,21 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-azul-personalizado py-2">
             <div class="container-fluid">
 
-                <a class="navbar-brand" href="index.html">
-                    <img src="" alt="logo" style="width: 120px;">
+                <a class="navbar-brand brand" href="#inicio" aria-label="TEC&EDUCA — página inicial">
+                    <span class="brand-main">TEC</span> <span class="brand-accent">&</span><span
+                        class="brand-main">EDUCA</span>
+                    <small>educação que transforma</small>
                 </a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false"
-                    aria-label="Abrir menu">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav"
+                    aria-controls="menuNav" aria-expanded="false" aria-label="Abrir menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="menuNav">
-                    <ul class="navbar-nav mx-auto text-center gap-1">
+                    <ul class="navbar-nav mx-auto text-center align-items-lg-center gap-1">
                         <li class="nav-item">
                             <a class="btn btn-modern nav-link text-laranja-personalizado" aria-current="page"
-                                href="#aprenda">Cursos Gratuitos</a>
+                                href="#aprenda">Cursos</a>
                         </li>
                         <li class="nav-item">
                             <a class="btn btn-modern nav-link text-laranja-personalizado" href="#sobre">Sobre</a>
@@ -41,239 +42,301 @@
                         </li>
                         <li class="nav-item">
                             <a class="btn btn-modern nav-link text-laranja-personalizado"
-                                href="#patrocionio">Seja Patrocionador</a>
+                                href="#patrocinio">Patrocinadores</a>
                         </li>
                         <li class="nav-item">
                             <a class="btn btn-modern nav-link text-laranja-personalizado"
-                                href="#matricula">Matrícula</a>
+                                href="#certificado">Certificados</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="btn btn-modern nav-link text-laranja-personalizado"
-                                href="#certificado">Certifcados</a>
+                        <li class="nav-item ms-lg-2">
+                            <a class="btn btn-matricula-nav fw-bold" href="#matricula">
+                                Matrícula <i class="bi bi-arrow-right ms-1"></i>
+                            </a>
                         </li>
                     </ul>
                 </div>
-
             </div>
         </nav>
     </header>
     <main class="container p-4">
-        <section id="hero" class="mb-5">
-            <div class="row align-items-center gy-4">
+        <section id="inicio" class="mb-5">
+            <div class="hero-panel">
+                <div class="row align-items-center gy-5">
 
-                <div class="col-12 col-lg-5 text-center text-lg-start">
-                    <h1 class="fw-bold display-5">
-                        <span class="text-azul-personalizado">TEC</span><span
-                            class="text-laranja-personalizado">&</span><span
-                            class="text-azul-personalizado">EDUCA</span>
-                    </h1>
-                    <p class="fs-5 text-dark">
-                        Conhecimento é o primeiro investimento. Aprenda a empreender e transforme sua vida
-                        financeira com a gente.
+                    <div class="col-12 col-lg-6">
+                        <h1 class="hero-title">
+                            <span class="hero-title-dark">Organize sua<br>vida financeira.</span>
+                            <span class="hero-title-accent">Transforme seu<br>futuro.</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Aprenda educação financeira de um jeito simples, prático e gratuito.
+                            Desenvolva hábitos melhores para cuidar do seu dinheiro com mais
+                            segurança e autonomia.
+                        </p>
+                        <div class="hero-cta-group">
+                            <a href="#matricula" class="hero-btn-primary">
+                                Começar agora <i class="bi bi-arrow-up-right"></i>
+                            </a>
+                            <a href="#sobre" class="hero-btn-secondary">
+                                Conhecer o projeto
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="hero-visual mx-auto">
+                            <img src="./img/foto2.jpeg" alt="Mulher usando aplicativo de educação financeira"
+                                class="hero-visual-img">
+
+                            <div class="hero-badge hero-badge-top">
+                                <i class="bi bi-graph-up-arrow"></i>
+                                <div>
+                                    <strong>+3%</strong>
+                                    <span>evolução mensal</span>
+                                </div>
+                            </div>
+
+                            <div class="hero-badge hero-badge-dark">
+                                <i class="bi bi-mortarboard-fill"></i>
+                                <div>
+                                    <strong>Aprenda</strong>
+                                    <span>sem complicação</span>
+                                </div>
+                            </div>
+
+                            <div class="hero-badge hero-badge-bottom">
+                                <i class="bi bi-lightbulb-fill"></i>
+                                <div>
+                                    <strong>Dica do dia</strong>
+                                    <span>Planeje antes de gastar.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="analise" class="mb-5">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3">
+                <div id="cx1" class="col">
+                    <div class="stat-card h-100">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <div class="stat-icon">
+                                <i class="bi bi-people-fill"></i>
+                            </div>
+                            <span class="stat-top-label text-success">+3% este mês</span>
+                        </div>
+                        <h2 class="stat-number">99</h2>
+                        <p class="stat-label">Pessoas<br>alcançadas</p>
+                    </div>
+                </div>
+
+                <div id="cx2" class="col">
+                    <div class="stat-card h-100">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <div class="stat-icon">
+                                <i class="bi bi-play-fill"></i>
+                            </div>
+                            <span class="stat-top-label text-laranja-personalizado">Produzindo</span>
+                        </div>
+                        <h2 class="stat-number stat-number-texto">Em breve</h2>
+                        <p class="stat-label">Aulas<br>disponíveis</p>
+                    </div>
+                </div>
+
+                <div id="cx3" class="col">
+                    <div class="stat-card h-100">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <div class="stat-icon">
+                                <i class="bi bi-camera-video-fill"></i>
+                            </div>
+                            <span class="stat-top-label text-laranja-personalizado">Produzindo</span>
+                        </div>
+                        <h2 class="stat-number stat-number-texto">Em breve</h2>
+                        <p class="stat-label">Conteúdos<br>gravados</p>
+                    </div>
+                </div>
+
+                <div id="cx4" class="col">
+                    <div class="stat-card stat-card-accent h-100">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <div class="stat-icon stat-icon-accent">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <span class="stat-top-label stat-top-label-accent">Educação para todos</span>
+                        </div>
+                        <h2 class="stat-number text-white">100%</h2>
+                        <p class="stat-label stat-label-accent">Foco em<br>acessibilidade</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sobre" class="sobre mb-5 rounded-4">
+            <div class="row align-items-center g-4">
+                <div class="col-12 col-md-3 text-center text-md-start">
+                    <span class="sobre-subtitulo">QUEM SOMOS</span>
+                    <h2 class="display-5 fw-bold text-white mt-2 mb-3">
+                        Sobre
+                    </h2>
+                    <p class="sobre-introducao">
+                        Conheça um pouco mais sobre nossa história,
+                        nossos valores e nossa missão de ensino.
                     </p>
-                </div>
-
-                <div class="col-12 col-lg-7">
-                    <div class="hero-img-wrapper position-relative mx-auto">
-                        <img src="./img/foto2.jpeg" alt="Mulher usando aplicativo de empreendedorismo"
-                            class="img-fluid rounded-5 shadow hero-img">
-
-                        <div class="fala fala-1">
-                            Já pensou em criar uma renda extra?
-                        </div>
-
-                        <div class="fala fala-2">
-                            A gente te ajuda a dar o primeiro passo!
-                        </div>
-
-                        <a href="#matricula" class="hero-btn fw-bold shadow">
-                            Comece Agora <i class="bi bi-arrow-right ms-1"></i>
-                        </a>
+                    <div class="sobre-destaque mt-4">
+                        <i class="bi bi-lightbulb-fill"></i>
+                        <span>
+                            Educação financeira para transformar
+                            conhecimento em oportunidades.
+                        </span>
                     </div>
                 </div>
-
-            </div>
-        </section>
-        <section id="analise" class=" d-flex row gap-5 p-2 m-3   ">
-            <div class="row g-3 align-items-stretch">
-                <div id="cx1" class="col-12 col-md-4">
-                    <div class="card bg-azul-personalizado text-white h-100 shadow-sm">
-                        <div class="card-body d-flex flex-column justify-content-between">
-                            <h5 class="card-title">Pessoas Alcançadas </h5>
-                            <h2 class="display-6 fw-bold">42</h2>
-                            <span class="badge bg-light text-success align-self-start">+3% este mês</span>
-                        </div>
-                    </div>
-                </div>
-                <div id="cx2" class="col-12 col-md-4">
-                    <div class="card bg-azul-personalizado text-white h-100 shadow-sm">
-                        <div class="card-body d-flex flex-column justify-content-between">
-                            <h5 class="card-title">Aulas Disponiveis</h5>
-                            <h2 class="display-6 fw-bold"></h2>
-                            <span class="badge bg-light text-success align-self-start">Produzindo</span>
-                        </div>
-                    </div>
-                </div>
-                <div id="cx3
-          " class="col-12 col-md-4">
-                    <div class="card bg-azul-personalizado text-white bg h-100 shadow-sm">
-                        <div class="card-body d-flex flex-column justify-content-between">
-                            <h5 class="card-title">Conteudos Gravados</h5>
-                            <h2 class="display-6 fw-bold"></h2>
-                            <span class="badge bg-light text-success align-self-postart">Produzindo</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="sobre" class="sobre mb-3 rounded container-fluid py-4">
-
-            <div class="row align-items-center">
-
-                <div class="col-12 col-md-3 mb-4 mb-md-0 text-center text-md-start">
-                    <h2 class="display-5 fw-bold text-primary ">Sobre</h2>
-                    <p class="text-branco-personalizado">Conheça um pouco mais sobre a nossa história, valores e nossa
-                        missão de ensino.</p>
-                </div>
-
                 <div class="col-12 col-md-9">
-
                     <div class="row g-3">
-
                         <div class="col-12 col-sm-4">
-                            <div class="card h-100 shadow-sm">
-                                <img src="..." class="card-img-top" alt="Sobre 1">
-                                <div class="card-body">
-                                    <h6 class="card-title fw-bold">Nossa Missão</h6>
-                                    <p class="card-text small text-muted">Acreditamos que a educação financeira deve ser
-                                        acessível a todos e que o acesso à ela pode ser por meio da inovação e da
-                                        tecnologia.</p>
+                            <div class="sobre-card h-100">
+                                <div class="sobre-icon">
+                                    <i class="bi bi-bullseye"></i>
                                 </div>
+                                <h5 class="fw-bold">
+                                    Nossa Missão
+                                </h5>
+
+                                <p>
+                                    Acreditamos que a educação financeira
+                                    deve ser acessível a todos e que o acesso
+                                    a ela pode acontecer por meio da inovação
+                                    e da tecnologia.
+                                </p>
                             </div>
                         </div>
 
                         <div class="col-12 col-sm-4">
-                            <div class="card h-100 shadow-sm">
-                                <img src="..." class="card-img-top" alt="Sobre 2">
-                                <div class="card-body">
-                                    <h6 class="card-title fw-bold">Nossa Visão</h6>
-                                    <p class="card-text small text-muted">Nosso projeto nasceu com a visão e o propósito
-                                        de ajudar pessoas que enfrentam dificuldades financeiras, oferecendo conteúdos
-                                        gratuitos, ferramentas simples e orientação bem prática para desenvolver hábitos
-                                        saudáveis de organização financeira.
+                            <div class="sobre-card h-100">
+                                <div class="sobre-icon">
+                                    <i class="bi bi-eye-fill"></i>
                                 </div>
+                                <h5 class="fw-bold">
+                                    Nossa Visão
+                                </h5>
+                                <p>
+                                    Nosso projeto nasceu com o propósito de
+                                    ajudar pessoas que enfrentam dificuldades
+                                    financeiras, oferecendo conteúdos gratuitos,
+                                    ferramentas simples e orientação prática.
+                                </p>
                             </div>
                         </div>
-
                         <div class="col-12 col-sm-4">
-                            <div class="card h-100 shadow-sm">
-                                <img src="..." class="card-img-top" alt="Sobre 3">
-                                <div class="card-body">
-                                    <h6 class="card-title fw-bold">Valores</h6>
-                                    <p class="card-text small text-muted">Por meio da ética e da inovação, mais do que
-                                        ensinar números, queremos trazer de volta uma tranquilidade, autonomia e
-                                        confiança para milhares de famílias da nossa região.</p>
+                            <div class="sobre-card h-100">
+                                <div class="sobre-icon">
+                                    <i class="bi bi-heart-fill"></i>
                                 </div>
-                            </div>
-                        </div>
 
-                    </div>
-                </div>
+                                <h5 class="fw-bold">
+                                    Nossos Valores
+                                </h5>
 
-            </div>
-        </section>
-        <section></section>
-       <ul id="matricula" class="nav justify-content-center  bg-azul-personalizado">
-            <li class="nav-item btn btn-modern">
-                <h1 class="text-laranja-personalizado"> Matricular-se</h1>
-            </li>
-        </ul>
-        <div class="tab-content " id="myTabContent">
-            <div class="tab-pane fade show active p-3" id="cadastro" role="tabpanel" aria-labelledby="cadastro-tab">
-                <div class="row">
-                    <div class="col-md-6">
-                        
-                        <form id="formCadastro " class="card card-body bg-azul-personalizado shadow-sm">
-                            <div class="mb-3">
-                                <label for="nome" class="form-label text-laranja-personalizado">Nome Completo</label>
-                                <input type="text" id="nome" class="form-control" placeholder="Digite seu nome">
+                                <p>
+                                    Por meio da ética e da inovação, queremos
+                                    trazer mais tranquilidade, autonomia e
+                                    confiança para milhares de famílias
+                                    da nossa região.
+                                </p>
                             </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label text-laranja-personalizado">E-mail</label>
-                                <input type="email" id="email" class="form-control" placeholder="nome@exemplo.com">
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card card-body bg-dark text-white shadow-sm h-100">
-                            <h5 class="text-laranja-personalizado">Preview da Matricula</h5>
-                            <hr>
-                            <p>
-                                <strong>Nome:</strong>
-                                <span id="previewNome" class="text-info text-laranja-personalizado">---</span>
-                            </p>
-                            <p>
-                                <strong>Status E-mail:</strong>
-                                <span id="previewEmail" class="text-danger text-laranja-personalizado">Inválido</span>
-                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+
         </section>
-        <section id="aprenda">
-            <h1>Ampliando os estudos:</h1>
+        <section id="matricula" class="mb-5 border rounded-4 p-4 p-md-5 bg-light shadow-sm">
+            <div class="text-center mb-4">
+                <span class="sobre-subtitulo d-block">FAÇA PARTE</span>
+                <h1 class="text-laranja-personalizado fw-bold">Matricular-se</h1>
+            </div>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active p-3" id="cadastro" role="tabpanel" aria-labelledby="cadastro-tab">
+                    <div class="row justify-content-center g-4">
+                        <div class="col-md-6 col-lg-5">
+
+                            <form id="formCadastro" class="card card-body matricula-card shadow-sm h-100">
+                                <div class="mb-3">
+                                    <label for="nome" class="form-label text-laranja-personalizado">
+                                        <i class="bi bi-person-fill me-1"></i>Nome Completo</label>
+                                    <input type="text" id="nome" class="form-control" placeholder="Digite seu nome">
+                                </div>
+                                <div class="mb-0">
+                                    <label for="email" class="form-label text-laranja-personalizado">
+                                        <i class="bi bi-envelope-fill me-1"></i>E-mail</label>
+                                    <input type="email" id="email" class="form-control" placeholder="nome@exemplo.com">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <div class="card card-body bg-dark text-white shadow-sm h-100 matricula-preview">
+                                <h5 class="text-laranja-personalizado"><i class="bi bi-eye-fill me-1"></i>Preview da
+                                    Matrícula</h5>
+                                <hr>
+                                <p>
+                                    <strong>Nome:</strong>
+                                    <span id="previewNome" class="text-info text-laranja-personalizado">---</span>
+                                </p>
+                                <p class="mb-0">
+                                    <strong>Status E-mail:</strong>
+                                    <span id="previewEmail"
+                                        class="text-danger text-laranja-personalizado">Inválido</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="topicos">
-            <ul class="nav justify-content-center bg-dark border-r rounded flex-wrap gap-2 p-2">
-                <li class="nav-item">
-                    <a class="btn btn-modern nav-link" aria-current="page" href="#">Começando a se organizar</a>
-                </li>
-                <li class="nav-item">
-                    <a class="btn btn-modern nav-link" href="#">Fugindo</a>
-                </li>
-                <li class="nav-item">
-                    <a class="btn btn-modern nav-link" href="#">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="btn btn-modern nav-link" href="#">Sobre</a>
-                </li>
-                <li class="nav-item">
-                    <a class="btn btn-modern nav-link" href="#">Conteudo</a>
-                </li>
-            </ul>
+        <section id="aprenda" class="mb-4">
+            <div class="text-center mb-4">
+                <span class="sobre-subtitulo d-block">POR QUE TEC&EDUCA</span>
+                <h1 class="section-titulo">Porque estudar conosco</h1>
+            </div>
+        </section>
+        <section id="topicos" class="mb-5">
+            <div class="chip-group justify-content-center">
+                <a href="#" class="topic-chip">
+                    <span class="topic-chip-icon"><i class="bi bi-book-half"></i></span>
+                    Estude no seu ritmo
+                </a>
+                <a href="#" class="topic-chip">
+                    <span class="topic-chip-icon"><i class="bi bi-lightbulb"></i></span>
+                    Didática fácil
+                </a>
+                <a href="#" class="topic-chip">
+                    <span class="topic-chip-icon"><i class="bi bi-bar-chart-line"></i></span>
+                    Evolua na prática
+                </a>
+                <a href="#" class="topic-chip">
+                    <span class="topic-chip-icon"><i class="bi bi-signpost-2"></i></span>
+                    Conquiste uma direção
+                </a>
+                <a href="#" class="topic-chip">
+                    <span class="topic-chip-icon"><i class="bi bi-patch-check-fill"></i></span>
+                    Acompanhe sua evolução
+                </a>
+            </div>
         </section>
 
-        <section id="categorias">
-            <h1>Explorar categorias</h1>
+        <section id="categorias" class="mb-4">
+            <div class="text-center mb-4">
+                <span class="sobre-subtitulo d-block">TRILHAS DE APRENDIZADO</span>
+                <h1 class="section-titulo">Explorar categorias</h1>
+            </div>
         </section>
-        <br>
-        <section id="categorias">
-            <ul class="nav justify-content-center bg-dark border-r rounded flex-wrap gap-2 p-2">
-                <li class="nav-item">
-                    <a class="btn btn-modern nav-link" aria-current="page" href="#">Começando a se organizar</a>
-                </li>
-                <li class="nav-item">
-                    <a class="btn btn-modern nav-link" href="#">Fugindo das dividas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="btn btn-modern nav-link" href="#">Investindo com pouco dinheiro</a>
-                </li>
-            </ul>
-            <ul class="nav justify-content-center bg-dark border-r rounded flex-wrap gap-2 p-2 mt-2">
-                <li class="nav-item">
-                    <a class="btn btn-modern nav-link" aria-current="page" href="#">Educaçào financeira para
-                        familia/filhos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="btn btn-modern nav-link" href="#">Sejá Apoidor</a>
-                </li>
-                <li class="nav-item">
-                    <a class="btn btn-modern nav-link" href="#">Blog</a>
-                </li>
-            </ul>
+        <section id="categorias-lista" class="mb-5">
+            <div class="chip-group justify-content-center">
+                <a href="#" class="topic-chip">Começando a se organizar</a>
+                <a href="#" class="topic-chip">Fugindo das dívidas</a>
+                <a href="#" class="topic-chip">Investindo com pouco dinheiro</a>
+                <a href="#" class="topic-chip">Educação financeira para família/filhos</a>
+                <a href="#" class="topic-chip">Dicas para economizar</a>
+            </div>
         </section>
 
         <section id="patrocionio" class="container my-5">
@@ -284,7 +347,7 @@
                     <div class="card h-100 shadow-sm overflow-hidden" style="max-width: 280px; margin: 0 auto;">
                         <div class="row g-0 align-items-center">
                             <div class="col-4">
-                                <img src="..." class="img-fluid rounded-start p-2" alt="logo"
+                                <img src="https://via.placeholder.com/80x80?text=Logo" class="img-fluid rounded-start p-2" alt="logo"
                                     style="max-height: 80px; object-fit: contain;">
                             </div>
                             <div class="col-8">
@@ -304,7 +367,7 @@
                     <div class="card h-100 shadow-sm overflow-hidden" style="max-width: 280px; margin: 0 auto;">
                         <div class="row g-0 align-items-center">
                             <div class="col-4">
-                                <img src="..." class="img-fluid rounded-start p-2" alt="logo"
+                                <img src="https://via.placeholder.com/80x80?text=Logo" class="img-fluid rounded-start p-2" alt="logo"
                                     style="max-height: 80px; object-fit: contain;">
                             </div>
                             <div class="col-8">
@@ -363,109 +426,185 @@
             </div>
         </section>
 
+        <section id="blog" class="mb-5 text-center">
+            <h1>Blog</h1>
+            <p class="text-dark">Conteúdo em breve.</p>
+        </section>
 
-    </main>
-    <footer class="bg-azul-personalizado text-white pt-5 pb-3">
-        <div class="container">
-
-            <div class="row g-4 justify-content-between">
-
-                <div class="col-12 col-md-5">
-                    <h5 class="text-warning fw-bold mb-3">Equipe de Desenvolvimento</h5>
-
-                    <div class="mb-3">
-                        <p class="mb-1 fw-semibold">Desenvolvedor:</p>
-                        <span class="text-light">Gustavo Lausem</span>
-                        <div class="mt-1">
-                            <a href="https://www.linkedin.com/in/gustavo-silva-839a713a9/"
-                                class="text-decoration-none text-secondary me-3 small"><i
-                                    class="bi bi-linkedin text-info"></i> LinkedIn</a>
-                            <a href="https://www.instagram.com/gustavolausem/"
-                                class="text-decoration-none text-secondary small"><i
-                                    class="bi bi-instagram text-danger"></i> Instagram</a>
-                        </div>
+        <section id="certificado" class="mb-5">
+            <div class="certificado-card d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
+                <div class="d-flex align-items-center gap-3">
+                    <div class="certificado-icon">
+                        <i class="bi bi-patch-check-fill"></i>
                     </div>
-
-                    <div class="mb-3">
-                        <p class="mb-1 fw-semibold">Colaboradores:</p>
-
-                        <div class="mb-2">
-                            <span class="text-light d-block small">William</span>
-
-                            <a href="https://linkedin.com" class="text-decoration-none text-secondary me-3 small"><i
-                                    class="bi bi-linkedin text-info"></i> LinkedIn</a>
-                            <a href="https://www.instagram.com/_willsilva_/"
-                                class="text-decoration-none text-secondary small"><i
-                                    class="bi bi-instagram text-danger"></i> Instagram</a>
-                        </div>
-
-                        <div class="mb-2">
-                            <span class="text-light d-block small">Rafael</span>
-                            <a href="https://linkedin.com" class="text-decoration-none text-secondary me-3 small"><i
-                                    class="bi bi-linkedin text-info"></i> LinkedIn</a>
-                            <a href="https://www.instagram.com/rafaelhirata20/"
-                                class="text-decoration-none text-secondary small"><i
-                                    class="bi bi-instagram text-danger"></i> Instagram</a>
-                        </div>
-                    </div>
-
-                    <div class="mt-4 pt-2 border-top border-secondary">
-                        <p class="mb-0 small text-secondary"><i
-                                class="bi bi-envelope-fill me-2"></i>gustavolausem1@gmail.com</p>
+                    <div>
+                        <span class="certificado-eyebrow">APRENDIZADO QUE FICA</span>
+                        <h2 class="certificado-titulo">Certificados</h2>
+                        <p class="certificado-texto mb-0">Conclua os conteúdos e acompanhe sua evolução. A área de
+                            certificados está sendo preparada.</p>
                     </div>
                 </div>
+                <span class="certificado-badge">EM BREVE</span>
+            </div>
+        </section>
 
-                <div class="col-12 col-md-5">
-                    <h5 class="text-warning fw-bold mb-3">Links Úteis</h5>
-                    <ul class="list-unstyled mb-0">
-                        <li class="mb-2">
-                            <a href="index.html" class="text-decoration-none text-light-50 hover-link"><i
-                                    class="bi bi-house-door me-2"></i>Início</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="matricula.html" class="text-decoration-none text-light-50 hover-link"><i
-                                    class="bi bi-bag me-2"></i>Matricula</a>
-                        </li>
-                        <li class="mb-3">
-                            <a href="#sobre" class="text-decoration-none text-light-50 hover-link"><i
-                                    class="bi bi-info-circle me-2"></i>Sobre o Projeto</a>
-                        </li>
+    </main>
+    <footer class="site-footer">
+        <div class="container">
 
+            <div class="row g-5">
+
+                <div class="col-12 col-lg-6">
+
+                    <a class="brand footer-brand" href="#inicio">
+                        <span class="brand-main">TEC</span>
+                        <span class="brand-accent">&</span>
+                        <span class="brand-main">EDUCA</span>
+
+                        <small>educação que transforma</small>
+                    </a>
+
+                    <p class="footer-description">
+                        Projeto dedicado a aproximar a educação financeira da realidade das
+                        pessoas por meio de conteúdo acessível, tecnologia e inovação.
+                    </p>
+
+                    <div class="socials">
+
+                        <a href="https://www.linkedin.com/in/gustavo-silva-839a713a/" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn">
+
+                            <i class="bi bi-linkedin"></i>
+
+                        </a>
+
+                        <a href="https://www.instagram.com/gustavolausem/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Instagram">
+
+                            <i class="bi bi-instagram"></i>
+
+                        </a>
+
+                        <a href="mailto:gustavolausem1@gmail.com" aria-label="Enviar e-mail">
+
+                            <i class="bi bi-envelope-fill"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <h3>Links rápidos</h3>
+                    <ul>
                         <li>
-                            <a href="pergunta.html" class="btn btn-outline-warning btn-sm fw-bold px-3 py-1.5"
-                                style="font-size: 0.8rem;">
-                                <i class="bi bi-heart-fill me-1"></i>Nos Ajude
-                            </a>
+                            <a href="#inicio">Início</a>
+                        </li>
+                        <li>
+                            <a href="#aprenda">Cursos</a>
+                        </li>
+                        <li>
+                            <a href="#sobre">Sobre</a>
+                        </li>
+                        <li>
+                            <a href="#matricula">Matrícula</a>
                         </li>
                     </ul>
                 </div>
-
-            </div>
-
-            <div class="row mt-5 pt-3 border-top border-secondary">
-                <div class="col-12 text-center">
-                    <h6 class="text-secondary mb-1 text-uppercase tracking-wider"
-                        style="font-size: 0.85rem; letter-spacing: 1px;">
-                        <i class="bi bi-mortarboard-fill me-2 text-warning"></i>Faculdade Toledo
-                    </h6>
-                    <small class="text-preto-personalizado d-block">Presidente Prudente - SP</small>
+                <div class="col-6 col-lg-3">
+                    <h3>Projeto</h3>
+                    <ul>
+                        <li>
+                            <a href="#blog">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#certificado">Certificados</a>
+                        </li>
+                        <li>
+                            <a href="#patrocionio">Apoiadores</a>
+                        </li>
+                        <li>
+                            <a href="pergunta.html">Nos ajude</a>
+                        </li>
+                    </ul>
                 </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h3 class="text-center text-lg-start">Desenvolvido por</h3>
+                    <div class="row g-3 justify-content-center justify-content-lg-start">
+                        <div class="col-auto">
+                            <div class="dev-card">
+                                <span class="dev-nome">Gustavo Lausem</span>
+                                <div class="socials">
+                                    <a href="https://www.linkedin.com/in/gustavo-silva-839a713a9/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                        <i class="bi bi-linkedin"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/gustavolausem/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                    <a href="gustavolausem1@gmail.com" aria-label="Enviar e-mail">
+                                        <i class="bi bi-envelope-fill"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="dev-card">
+                                <span class="dev-nome">Rafael Hirata</span>
+                                <div class="socials">
+                                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                        <i class="bi bi-linkedin"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/rafaelhirata20/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                    <a href="" aria-label="Enviar e-mail">
+                                        <i class="bi bi-envelope-fill"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-auto">
+                            <div class="dev-card">
+                                <span class="dev-nome">William do Mar</span>
+                                <div class="socials">
+                                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                        <i class="bi bi-linkedin"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/_willsilva_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                    <a href="" aria-label="Enviar e-mail">
+                                        <i class="bi bi-envelope-fill"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-info">
+                    <span>
+                        <i class="bi bi-mortarboard-fill"></i>
+                        Faculdade Toledo — Presidente Prudente/SP
+                    </span>
+                    <span>
+                        Desenvolvido para projeto acadêmico • 2026
+                    </span>
+                </div>
+                <a href="#inicio" class="back-to-top" aria-label="Voltar ao topo">
+                    <i class="bi bi-arrow-up"></i>
+                </a>
             </div>
         </div>
     </footer>
-
-
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
 </body>
-
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-<script src="./app.js"></script>
 
 </html>
