@@ -28,7 +28,27 @@ body {
     font-size: 0.65rem;
     font-weight: 400;
 }
+.stat-card {
+    display: flex;
+    flex-direction: column;
+}
 
+.stat-top-label {
+    white-space: nowrap; /* garante que "Preview" nunca quebre linha ou grude no texto */
+}
+
+.stat-label {
+    margin-bottom: 12px;
+}
+
+.stat-image {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    object-fit: contain;
+    margin-top: auto;
+    align-self: center; /* imagem centralizada e grande, ocupando o espaço vazio */
+}
 .sobre {
     position: relative;
     overflow: hidden;
